@@ -1,0 +1,26 @@
+<!-- When multiple coders make commit and make changes to same part of code. It is called merge conflict -->
+<!-- We run into situation where Git doesn't know what to do, because of 2 sets of changes -->
+<!-- We need to figure out what to do when we run into this sort of conflict -->
+<!-- During conflict git will show message like:
+    "CONFLICT (content): Merge conflict in abc.py, fix the conflicts and then commit the result. " -->
+
+<!-- In a conflict the file will show something like this:
+    a=22
+    <<<<<< HEAD (indicating my code change below)
+    b=31
+    ======= (divider above is my code change below is other's code changes)
+    b=0
+    >>>>>>> 4567489415364987 (hashcode of conflict > indicating other's code changes above)
+    c=17
+    d=11 -->
+
+    
+    <!-- Remove this conflict markers in the file and then decide which code to keep in the file
+    a=22
+    
+    b=31
+    
+    
+    
+    c=17
+    d=11 -->
