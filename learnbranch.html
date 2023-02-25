@@ -1,0 +1,63 @@
+<html>
+    <!--
+        Suppose you are working on app and made new and new features but later want to fix bug to older version
+        you can't go back and write new features again!
+        
+        You want to work on all of those things simultaneously and be able to easily switch between them.
+        
+        Branching is way of git's working on different parts of same depository at same time.
+        
+        In branches you can keep working and then introduce a new branch if you want to add new feature. Then to fix bug you can
+        go back to original branch and make changes to it.
+        
+        So there are now two different branches, each of them have different code on it, one of which I've been fixing bug and
+        one containing the new feature.
+        
+        Each of the branch is going to have a name, original branch (bug fixing) is master branch or default branch on
+        which the stable version of your code is going to be there. And other branch is called feature branch where new features
+        are being worked on.
+
+        At any given time your focus is only on one of these two branches. And where your focus branch is, what current state of
+        your repository is, is designated by HEAD. So if HEAD is pointing to master then it means your repository is right now
+        working on bug fixing branch.
+
+        So HEAD indicates what branch you are working on right now. Like in FIFA, the player you are playing with is represented
+        by an arrow on his head.
+
+        You can change the HEAD. You can switch the branch you want to look at. You can work on different branches by switching
+        the head.
+
+        And when you are done working, with the bug and the feature too, you can merge those change back together so that everything
+        comes back to master branch that now has all the latest code.
+
+        Git branch allows us to work on multiple things simultaneously and then without disrupting the master version of code.
+
+        Let's look at example now ------->
+    <head>
+        <style>
+            h1{
+                color: blue; /*Made changes*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <!--Now I want to move inline style to head CSS style. I can make it now, but I want to make other changes to original
+            code too. Like adding h2 tag on main branch as a new feature. So I have to make changes on new branch to fix styling. -->
+        
+        <!-- Command "git branch" will tell me what branch I am currently on and what other branches exist in my repository.
+            * main ---- is the output on CLI. * means this is the branch I am working on right now.-->
+
+        <!-- So to checkout new branch I can write command "git checkout -b <name_of_branch>" -b is for branch name without ""
+            Git gives me a message that I switched to a new branch called h2tag (branch I named) -->
+
+        <!-- If I type git branch again it will show me 2 branches , main and h2tag (with *) -->
+
+        <!-- After making changes, commit those changes using git commit -am "added style to head removed from inline" -->
+
+        <!-- But I have only made changes to h2tag branch. We can switch our branch. Using git checkout -->
+
+        <!-- git checkout -b <name> creates new branch. To switch to other existing branch use code, git checkout <branch name>
+            in our case git checkout main -->
+    </body>
+</html>
